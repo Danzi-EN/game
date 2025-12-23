@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>기억력 카드 게임</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div>
+        <p class="eyebrow">집중해서 기억해요</p>
+        <h1>기억력 카드 게임</h1>
+        <p class="sub">같은 그림을 찾아 모든 카드를 맞춰보세요!</p>
+      </div>
+      <button id="resetButton" class="pill">다시 시작</button>
+    </header>
+
+    <section class="status">
+      <div class="stat">
+        <span class="label">걸린 시간</span>
+        <span id="timer" class="value">00:00</span>
+      </div>
+      <div class="stat">
+        <span class="label">뒤집기</span>
+        <span id="moves" class="value">0 회</span>
+      </div>
+      <div class="stat">
+        <span class="label">맞춘 카드</span>
+        <span id="matched" class="value">0 / 8 쌍</span>
+      </div>
+    </section>
+
+    <section class="board" id="board" aria-label="기억력 카드 보드"></section>
+
+    <p id="message" class="message" role="status" aria-live="polite"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
